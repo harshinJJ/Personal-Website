@@ -1,0 +1,192 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.header {
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px 40px;
+  background: transparent;
+  color: #fff;
+  box-sizing: border-box;
+  z-index: 9999;
+  font-family: "Open Sans", sans-serif;
+  transition:
+    background 0.3s ease,
+    backdrop-filter 0.3s ease;
+}
+.header.scrolled {
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(40px);
+}
+.header-left {
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.header-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 110px;
+  font-size: 18px;
+}
+
+.header-center a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.header-center a:hover {
+  opacity: 0.6;
+}
+
+.header-right {
+  position: absolute;
+  top: -50px;
+  right: 0;
+  width: 195px;
+  height: 250px;
+  overflow: hidden;
+  z-index: 1001;
+}
+
+.lang-circle {
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  border: 1px solid #636262;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 40px;
+  top: 0;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.lang-text {
+  line-height: 1;
+  font-size: 18px;
+}
+
+.lang-divider {
+  width: 30px;
+  height: 1px;
+  background-color: #fff;
+  transform: rotate(12deg);
+  margin: 6px 0;
+}
+
+.mobile-lang {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  color: black;
+}
+
+.mobile-lang span {
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.mobile-lang span:hover {
+  opacity: 0.6;
+}
+
+.desktop-lang {
+  display: block;
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 29px;
+  z-index: 2000;
+}
+
+.burger div {
+  width: 28px;
+  height: 3px;
+  background: white;
+  border-radius: 3px;
+}
+
+.burger.active div {
+  background: #000;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  width: 50%;
+  height: 100vh;
+
+  background: url("../assets/Header/burgermenubg.jpg") center/cover no-repeat;
+  padding: 100px 35px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+
+  transform: translateX(100%);
+  transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+
+  z-index: 1500;
+}
+.mobile-menu.open {
+  transform: translateX(0);
+}
+
+.mobile-menu::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.01);
+  backdrop-filter: blur(0.01px);
+  z-index: -1;
+}
+
+.mobile-menu a {
+  color: black;
+  text-decoration: none;
+  font-size: 23px;
+  font-weight: 600;
+}
+
+.mobile-menu.open {
+  right: 0;
+}
+
+@media (max-width: 764px) {
+  .header-center {
+    display: none;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  .desktop-lang {
+    display: none;
+  }
+}
