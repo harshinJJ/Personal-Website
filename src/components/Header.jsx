@@ -66,7 +66,7 @@ const Header = () => {
           <div className="lang-divider"></div>
 
           <a
-            href="/under-development"
+            
             className="lang-text"
             style={{
               textDecoration: "none",
