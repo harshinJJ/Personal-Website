@@ -189,7 +189,13 @@ const Home = () => {
 
         <div className="mobile-project-btn load pop delay-6" data-depth="1">
           <div className="mobile-pill">Projects</div>
-          <div className="mobile-circle">→</div>
+          <a
+            href="#projects"
+            style={{ textDecoration: "none" }}
+            className="mobile-circle"
+          >
+            →
+          </a>
         </div>
         <div className="slider-wrapper load from-bottom delay-11">
           <Swiper
@@ -215,31 +221,45 @@ const Home = () => {
           </Swiper>
         </div>
         <div className="mobile-socials">
-          <div
+          <a
+            href="https://linkedin.com/in/harshin4057"
+            target="_blank"
+            rel="noopener noreferrer"
             className="section2-social-btn load rise delay-9"
             data-depth="0.6"
           >
             <FaLinkedin /> LinkedIn
-          </div>
-          <div
+          </a>
+
+          <a
+            href="https://github.com/harshinJJ"
+            target="_blank"
+            rel="noopener noreferrer"
             className="section2-social-btn load rise delay-8"
             data-depth="0.6"
           >
             <FaGithub /> Github
-          </div>
+          </a>
 
-          <div
+          <a
+            href="https://twitter.com/har_shi___"
+            target="_blank"
+            rel="noopener noreferrer"
             className="section2-social-btn load rise delay-10"
             data-depth="0.6"
           >
             <FaXTwitter /> Twitter
-          </div>
-          <div
+          </a>
+
+          <a
+            href="https://instagram.com/harshin.mansoor"
+            target="_blank"
+            rel="noopener noreferrer"
             className="section2-social-btn load rise delay-11"
             data-depth="0.6"
           >
             <FaInstagram /> Instagram
-          </div>
+          </a>
         </div>
       </section>
       {/*  Hero Section Ends*/}
