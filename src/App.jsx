@@ -11,11 +11,6 @@ function App() {
         <Header />
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route
-            exact
-            path="/under-development"
-            element={<UnderDevelopment />}
-          />
         </Routes>
       </Router>
     </>
