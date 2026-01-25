@@ -60,9 +60,11 @@ const Home = () => {
 
           <div className="section2-project-btn-wrapper">
             <div className="section2-project-btn-pill">Projects</div>
-            <div className="section2-project-btn-circle">
-              <span className="arrow-icon">→</span>
-            </div>
+            <a href="#projects" style={{ textDecoration: "none" }}>
+              <div className="section2-project-btn-circle">
+                <span className="arrow-icon">→</span>
+              </div>
+            </a>
           </div>
         </div>
 
