@@ -33,7 +33,7 @@ body {
 }
 .section2 {
   position: relative;
-  padding: 79px 190px 30px 190px;
+  padding: 79px 190px 0px 190px;
   box-sizing: border-box;
   color: #fff;
   overflow: hidden;
@@ -392,7 +392,7 @@ body {
   grid-template-columns: repeat(2, 1fr);
   gap: 8px;
   width: 100%;
-  padding: 0 10px;
+  padding: 10px 10px;
   margin-top: 25px;
 }
 .mobile-socials .section2-social-btn {
