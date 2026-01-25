@@ -64,7 +64,18 @@ const Header = () => {
         <div className="lang-circle">
           <div className="lang-text">En</div>
           <div className="lang-divider"></div>
-          <div className="lang-text">Ar</div>
+
+          <a
+            href="/under-development"
+            className="lang-text"
+            style={{
+              textDecoration: "none",
+              color: "inherit",
+              cursor: "pointer",
+            }}
+          >
+            Ar
+          </a>
         </div>
       </div>
     </header>
