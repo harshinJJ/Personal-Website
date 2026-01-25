@@ -207,40 +207,14 @@
     max-width: 420px;
   }
 }
-/* ---------------------------------------------------
-  Laptops
----------------------------------------------------- */
-@media (max-width: 1400px) {
-  .about-section {
-    padding: 60px 80px;
-    overflow-x: hidden;
-  }
-
-  .about-section .about-title {
-    width: 100%;
-    margin-right: 0;
-    font-size: 30px;
-    text-align: right;
-  }
-
-  .about-section .circle-outline {
-    width: 600px;
-    height: 600px;
-    top: -200px;
-    right: -180px;
-  }
-
-  .about-section .photo-card {
-    width: 380px;
-    height: 480px;
-  }
+@media (max-width: 1650px) {
   .about-section .card1 {
     width: 100%;
-    max-width: 220px;
+    max-width: 580px;
   }
   .about-section .card2 {
     width: 100%;
-    max-width: 210px;
+    max-width: 160px;
   }
   .about-section .card3 {
     width: 100%;
@@ -248,22 +222,30 @@
   }
   .about-section .card4 {
     width: 100%;
-    max-width: 220px;
+    max-width: 110px;
   }
   .about-section .card5 {
     width: 100%;
-    max-width: 180px;
+    max-width: 160px;
   }
   .about-section .card6 {
     width: 100%;
-    max-width: 220px;
+    max-width: 210px;
+  }
+  .about-section .photo-card {
+    width: 450px;
+    height: 630px;
   }
 }
 
 /* ---------------------------------------------------
+  Laptops
+---------------------------------------------------- */
+
+/* ---------------------------------------------------
   iPad Pro
 ---------------------------------------------------- */
-@media (max-width: 1024px) {
+@media (max-width: 1400px) {
   .about-section {
     padding: 50px 50px;
     overflow-x: hidden;
